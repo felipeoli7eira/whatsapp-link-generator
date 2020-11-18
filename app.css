@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.display-none
+{
+    display: none !important;
+}
+
+.app
+{
+    max-width: 700px;
+    margin: 3rem auto;
+}
+
+.app h1
+{
+    font-weight: 300;
+    color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.app h1 img
+{
+    width: 40px;
+    margin-left: 20px;
+}
+
+.app p.info
+{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+
+
+.how-to-use h2
+{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.how-to-use li
+{
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #444;
+}
+
+.how-to-use li span:nth-child(1)
+{
+    margin-right: 5px;
+    font-size: 19px;
+    color: rgb(77, 194, 62);
+}
+
+.user-message
+{
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.user-message.success
+{
+    background-color: rgb(75, 177, 75);
+    color: #fff;
+}
+
+.user-message.error
+{
+    background-color: rgb(209, 86, 77);
+    color: #fff;
+}
+
+form input
+{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 17px;
+}
+
+form button
+{
+    background: none;
+    border: none;
+    font-weight: 600;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 17px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s;
+}
+
+form .initial
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .input-group:nth-child(1)
+{
+    margin-bottom: 3px;
+}
+
+form .input-group
+{
+    border: 1px solid #f1f1f1;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    transition: all .2s;
+}
+
+form .input-group label
+{
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+}
+
+form .input-group img
+{
+    width: 17px;
+    margin: 0 10px;
+}
+
+form .input-group div
+{
+    display: flex;
+    align-items: center;
+}
+
+form .input-group div input
+{
+    flex-grow: 1;
+    padding: 10px;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.initial footer button
+{
+    color: #fff;
+    background-color: rgb(75, 177, 75);
+}
+
+.initial footer button:disabled
+{
+    opacity: 0.5;
+}
+
+.initial footer button:hover
+{
+    background-color: rgb(104, 199, 104);
+}
+
+.finished footer button:first-child
+{
+    margin-right: 10px;
+    box-shadow: none;
+    border: 2px solid rgb(75, 177, 75);
+
+    color: rgb(75, 177, 75);
+}
+
+.finished footer button:first-child:hover
+{
+    background-color:  rgb(75, 177, 75);
+    color: #fff;
+}
+
+.finished footer button:last-child
+{
+    background-color: rgb(75, 177, 75);
+    color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+    .app
+    {
+        width: 100%;
+        padding: 2rem;
+        margin: 0;
+    }
+  }
