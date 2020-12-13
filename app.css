@@ -202,6 +202,11 @@ footer
     color: #fff;
 }
 
+.finished .input-group
+{
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 800px) {
     .app
     {
