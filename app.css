@@ -162,6 +162,7 @@ footer
     display: flex;
     justify-content: center;
     padding: 1rem;
+    width: 100%;
 }
 
 .initial footer button
@@ -208,4 +209,23 @@ footer
         padding: 2rem;
         margin: 0;
     }
-  }
+
+
+    footer
+    {
+        flex-direction: column;
+        padding: 0
+    }
+
+    footer button.copy
+    {
+        margin-right: 0 !important;
+        margin-bottom: 1rem;
+    }
+
+    .initial footer button
+    {
+        flex-grow: 1 !important;
+        margin-top: 1rem;
+    }
+}
