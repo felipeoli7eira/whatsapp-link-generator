@@ -8,7 +8,20 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.display-none
+body
+{
+    background-color: #b8efbc;
+}
+
+.app img
+{
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.d-none
 {
     display: none !important;
 }
@@ -22,7 +35,7 @@
 .app h1
 {
     font-weight: 300;
-    color: #444;
+    color: #1e6f21;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,19 +50,39 @@
 
 .app p.info
 {
-    margin: 2rem 0;
+    margin: 1rem 0 0 0;
     text-align: center;
     font-size: 13px;
     font-weight: 500;
-    color: #777;
+    color: rgb(80, 80, 80);
 }
 
+nav.source-code
+{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+nav.source-code a
+{
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: 500;
+    transition: all 0.2s;
+    font-size: 13px;
+}
+
+nav.source-code a:hover, nav.source-code a:active
+{
+    color: #46d34b;
+}
 
 .how-to-use h2
 {
-    font-weight: 300;
     font-size: 25px;
     margin-bottom: 1rem;
+    font-weight: 300;
+    color: #1e6f21;
 }
 
 .how-to-use li
@@ -79,7 +112,7 @@
 
 .user-message.success
 {
-    background-color: rgb(75, 177, 75);
+    background-color: #3aca74;
     color: #fff;
 }
 
@@ -99,14 +132,15 @@ form input
 
 form button
 {
+    text-transform: uppercase;
     background: none;
     border: none;
     font-weight: 600;
-    padding: 10px;
+    padding: 15px;
     outline: none;
     cursor: pointer;
     border-radius: 3px;
-    font-size: 17px;
+    font-size: 13px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.2s;
 }
@@ -118,25 +152,25 @@ form .initial
     align-items: center;
 }
 
-form .input-group:nth-child(1)
-{
-    margin-bottom: 3px;
-}
-
 form .input-group
 {
-    border: 1px solid #f1f1f1;
-    padding: 5px;
+    background-color: #ffffff;
+    padding: 10px;
     border-radius: 5px;
     width: 100%;
     transition: all .2s;
+}
+
+form .input-group:nth-child(1)
+{
+    margin-bottom: 3px;
 }
 
 form .input-group label
 {
     font-size: 13px;
     font-weight: 500;
-    color: #444;
+    color: rgb(73, 73, 73);
 }
 
 form .input-group img
@@ -157,6 +191,17 @@ form .input-group div input
     padding: 10px;
 }
 
+form .input-group div input[type=number]
+{
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+form .input-group div input[type=number]::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+}
+
 footer
 {
     display: flex;
@@ -168,7 +213,7 @@ footer
 .initial footer button
 {
     color: #fff;
-    background-color: rgb(75, 177, 75);
+    background-color: #3aca74;
 }
 
 .initial footer button:disabled
@@ -176,30 +221,45 @@ footer
     opacity: 0.5;
 }
 
-.initial footer button:hover
+.initial footer button:hover,
+.initial footer button:focus
 {
-    background-color: rgb(104, 199, 104);
+    background-color: #50d384;
 }
 
-.finished footer button:first-child
+.finished footer button:nth-child(1)
 {
-    margin-right: 10px;
     box-shadow: none;
-    border: 2px solid rgb(75, 177, 75);
-
-    color: rgb(75, 177, 75);
+    border: 2px solid #3aca74;
+    color: #3aca74;
 }
 
-.finished footer button:first-child:hover
+.finished footer button:nth-child(2)
 {
-    background-color:  rgb(75, 177, 75);
+    margin: 0 10px;
+}
+
+.finished footer button:nth-child(1):hover,
+.finished footer button:nth-child(1):focus
+{
+    background-color: #3aca74;
     color: #fff;
 }
 
-.finished footer button:last-child
+.finished footer button:nth-child(2),
+.finished footer button:nth-child(3)
 {
-    background-color: rgb(75, 177, 75);
+    background-color: #3aca74;
     color: #fff;
+}
+
+.finished footer button:nth-child(2):hover,
+.finished footer button:nth-child(2):focus,
+
+.finished footer button:nth-child(3):hover,
+.finished footer button:nth-child(3):focus
+{
+    background-color: #50d384;
 }
 
 .finished .input-group
@@ -207,14 +267,28 @@ footer
     overflow: hidden;
 }
 
+.finished .input-group input[type='text']
+{
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 800px) {
     .app
     {
-        width: 100%;
+        max-width: 100% !important;
         padding: 2rem;
         margin: 0;
     }
 
+    .app img
+    {
+        max-width: 50px;
+    }
+
+    .app h1
+    {
+        font-size: 20px;
+    }
 
     footer
     {
@@ -225,7 +299,11 @@ footer
     footer button.copy
     {
         margin-right: 0 !important;
-        margin-bottom: 1rem;
+    }
+
+    footer button.new
+    {
+        margin: 5px 0 !important;
     }
 
     .initial footer button

@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gerador de links de conversa no WhatsApp</title>
-        <link rel="stylesheet" href="./app.css">
+        <link rel="stylesheet" href="./src/app.css">
         <link rel="shortcut icon" href="./whatsapp.svg" type="image/x-icon">
     </head>
     <body>
         <main class="app">
-            <h1>Gerador de link para o WhatsApp <img src="./whatsapp.svg" alt="WhatsApp"></h1>
+            <img src="./img/whatsapp.svg" alt="WhatsApp">
+            <h1>Gerador de link para o WhatsApp</h1>
             <form name="form" action="#" method="#">
                 <p class="user-message display-none"></p>
                 <div class="initial">
@@ -17,15 +18,15 @@
                     <div class="input-group">
                         <label for="phone">Número do whatsapp</label>
                         <div>
-                            <img src="./phone.svg" alt="telefone">
-                            <input type="text" id="phone" name="phone" minlength="11" autofocus placeholder="00 0 0000 0000" required />
+                            <img src="./img/phone.svg" alt="telefone">
+                            <input type="number" inputmode="numeric" id="phone" name="phone" minlength="11" autofocus placeholder="00 0 0000 0000" required />
                         </div>
                     </div>
 
                     <div class="input-group">
                         <label for="message">Mensagem</label>
                         <div>
-                            <img src="./chat.svg" alt="chat">
+                            <img src="./img/chat.svg" alt="chat">
                             <input id="message" type="text" name="message" />
                         </div>
                     </div>
@@ -35,45 +36,53 @@
                     </footer>
                 </div>
 
-                <div class="finished display-none">
+                <div class="finished d-none">
                     <div class="input-group">
                         <label for="link">Seu link</label>
                         <div>
-                            <img src="./link.svg" alt="Link">
+                            <img src="./img/link.svg" alt="Link">
                             <input id="link" type="text" name="link" />
                         </div>
                     </div>
                     <footer>
                         <button type="button" name="copy" class="copy">Copiar</button>
                         <button type="button" name="new" class="new">Novo</button>
+                        <button type="button" name="open" class="open">abrir chat</button>
                     </footer>
                 </div>
             </form>
 
-            <p class="info">Não guardamos os dados informados</p>
+            <p class="info">
+                Este app apenas gera o link no formato necessário para interação com a API do whatsapp. <br />
+                Os dados informados aqui não são guardados nem usados para outros fins.
+            </p>
+
+            <nav class="source-code">
+                <a href="https://github.com/felipeoli7eira/whatsapp-link-generator" target="_blank">código fonte</a>
+            </nav>
 
             <section class="how-to-use">
                 <h2>Como funciona</h2>
                 <ul class="steps">
                     <li>
-                        <span class="index">1.</span>
+                        <span class="index">( 1 )</span>
                         <span class="text">Insira o nº do WhatsApp sem se preocupar com hífem ou parênteses</span>
                     </li>
                     <li>
-                        <span class="index">2.</span>
+                        <span class="index">( 2 )</span>
                         <span class="text">Escreva uma mensagem para começar a conversa (não é obrigatório)</span>
                     </li>
                     <li>
-                        <span class="index">3.</span>
+                        <span class="index">( 3 )</span>
                         <span class="text">Clique no botão "GERAR LINK"</span>
                     </li>
                     <li>
-                        <span class="index">4.</span>
+                        <span class="index">( 4 )</span>
                         <span class="text">Antes de usar, faça o teste</span>
                     </li>
                 </ul>
             </section>
         </main>
-        <script type="module" src="./main.js"></script>
+        <script type="module" src="./src/main.js"></script>
     </body>
 </html>
