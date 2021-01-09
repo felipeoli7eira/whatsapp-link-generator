@@ -2,24 +2,26 @@
 
 [whatsapp-link-generator.vercel.app](https://whatsapp-link-generator.vercel.app/)
 
-#### Data: 18/11/2020
+#### Data de criação: 18/11/2020
 
-Um belo dia eu estava assistindo uma video-aula de photoshop, aí o instrutor mostrou um site que gera link de conversa no whatsapp (era uma aula de como fazer um cartão digital interativo (link do cartão logo abaixo) ). Eu olhei e falei: "oshi '-', facin  de fazer"... aí eu fiz, só isso mesmo kkkk, pra dar uma praticada.
+Geração de links para interação com a API de conversa do WhatsApp.
 
-[O cartão que eu acabei de falar](https://drive.google.com/file/d/1HUQOxFwa_9pkn3VvrkYlpwRtZj_UdABV/view?usp=sharing)
+# Como instalar
 
-# O Projetinho
+Não tem nem isso de "instalar", é só baixar e partir pro abraço. Não tem dependências, são assets estáticos (html, css, js e svg's).
 
-A mensagem é opcional
+# Preview
 
-![Visão principal](./main.png)
+![index](./img/main.png)
 
-![Inserindo um número](./number.png)
+![link gerado](./img/link.png)
 
-![Link Gerado](./link.png)
+![mobile](./img/mobile.png)
 
 ### Minhas redes sociais:
 
 [Instagram](https://www.instagram.com/felipeoli7eira/)
+
 [LinkedIn](https://www.linkedin.com/in/felipeoli7eira/)
+
 [Telegram](https://t.me/felipeOli7eira_t)
