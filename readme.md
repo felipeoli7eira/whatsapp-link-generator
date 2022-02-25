@@ -20,7 +20,7 @@ Não tem nem isso de "instalar", é só baixar e partir pro abraço. Não tem de
 
 ### Minhas redes sociais:
 
-[Instagram](https://www.instagram.com/felipeoli7eira/)
+[Instagram](https://www.instagram.com/oli7eirafelipe/)
 
 [LinkedIn](https://www.linkedin.com/in/felipeoli7eira/)
 
